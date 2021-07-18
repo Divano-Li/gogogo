@@ -42,6 +42,7 @@ type pool struct {
 	signal  chan int
 }
 
+//创建资源池
 func initPool() *pool {
 	return &pool{100, 0, make(chan int, 100)}
 }
